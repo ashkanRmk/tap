@@ -1,0 +1,302 @@
+@font-face {
+	font-family: Shabnam;
+	font-weight: 500;
+	src: url('./fonts/Shabnam-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Shabnam;
+	font-weight: 700;
+	src: url('./fonts/Shabnam-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Shabnam;
+	font-weight: 400;
+	src: url('./fonts/Shabnam-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('https://lootalert.sgp1.digitaloceanspaces.com/Gbox/taphere/fonts/icomoon.eot?1hjvr8');
+	src: url('https://lootalert.sgp1.digitaloceanspaces.com/Gbox/taphere/fonts/icomoon.eot?1hjvr8#iefix')
+			format('embedded-opentype'),
+		url('https://lootalert.sgp1.digitaloceanspaces.com/Gbox/taphere/fonts/icomoon.ttf?1hjvr8') format('truetype'),
+		url('https://lootalert.sgp1.digitaloceanspaces.com/Gbox/taphere/fonts/icomoon.woff?1hjvr8') format('woff'),
+		url('https://lootalert.sgp1.digitaloceanspaces.com/Gbox/taphere/fonts/icomoon.svg?1hjvr8#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-snapchat-ghost:before {
+	content: '\e900';
+}
+
+.icon-tiktok:before {
+	content: '\e901';
+}
+
+.icon-facebook:before {
+	content: '\ea90';
+}
+
+.icon-instagram:before {
+	content: '\ea92';
+}
+
+.icon-twitter:before {
+	content: '\ea96';
+}
+
+.icon-youtube:before {
+	content: '\ea9d';
+}
+
+.green.theme,
+.green.theme .footer {
+	background-color: #e3f1e8;
+}
+
+.green.theme .subtitle,
+.green.theme .credits span,
+.green.theme .btn-icon {
+	color: #6c8574;
+}
+
+.rose.theme,
+.rose.theme .footer {
+	background-color: #f1e3e6;
+}
+
+.rose.theme .subtitle,
+.rose.theme .credits span,
+.rose.theme .btn-icon {
+	color: #917474;
+}
+
+.blue.theme,
+.blue.theme .footer {
+	background-color: #e3eef1;
+}
+
+.blue.theme .subtitle,
+.blue.theme .credits span,
+.blue.theme .btn-icon {
+	color: #74858e;
+}
+
+.rust.theme,
+.rust.theme .footer {
+	background-color: #fff3e7;
+}
+
+.rust.theme .subtitle,
+.rust.theme .credits span,
+.rust.theme .btn-icon {
+	color: #b59577;
+}
+
+.black.theme,
+.black.theme .footer {
+	background-color: #222630;
+}
+
+.black.theme .name {
+	color: #fff;
+}
+
+.black.theme .subtitle,
+.black.theme .credits span,
+.black.theme .btn-icon {
+	color: rgba(255, 255, 255, 0.534);
+}
+
+.btn-icon i {
+	text-align: center;
+	font-size: 22px;
+	width: 26px;
+	line-height: 24px;
+	padding-top: 1px;
+}
+
+.btn-icon {
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+.icon-row {
+	justify-content: center;
+}
+
+.name {
+	color: #403a36;
+	font-size: 18px;
+	font-family: Shabnam;
+	font-weight: 500;
+}
+
+.subtitle {
+	font-size: 14px;
+	font-family: Shabnam;
+	font-weight: 500;
+	margin-bottom: 37px;
+}
+
+.theme {
+	padding: 10px;
+}
+
+.dp {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	box-shadow: 0px 8px 20px #ddd;
+}
+
+.black .dp,
+.black .card {
+	box-shadow: none;
+}
+
+.thumbnail {
+	width: 75px;
+	height: 75px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.content {
+	margin-top: 20px;
+	margin-bottom: 100px;
+	max-width: 500px;
+}
+
+.card {
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #ddd;
+	border-color: #fff;
+	margin-bottom: 10px;
+}
+
+.card-body {
+	padding: 17px 12px;
+}
+
+.card-subtitle {
+	color: #2c3e5e;
+	padding-bottom: 2px;
+	font-family: Shabnam;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.card-subtitle.folded {
+	margin-bottom: -10px;
+}
+
+.linkText {
+	flex: 1;
+}
+
+.linkImg {
+	flex: 0;
+}
+
+.card-text {
+	color: #909aab;
+	font-size: 14px;
+	padding-top: 5px;
+	font-family: Shabnam;
+}
+
+.error-image {
+	max-width: 450px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.error-message {
+	margin: 50px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.white-container {
+	max-width: 500px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 0 auto;
+	display: block;
+
+	font-size: 14px;
+	font-family: Shabnam;
+	font-weight: 500;
+	margin-bottom: 100px;
+	color: #555;
+}
+
+.white-container .title {
+	color: #000;
+	font-size: 18px;
+	font-family: Shabnam;
+	font-weight: 500;
+	padding-top: 10px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.footer .card-container {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer .card {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.footer .heart {
+	width: 25px;
+	height: 25px;
+}
+
+.credits {
+	font-size: 14px;
+	padding: 10px;
+	display: block;
+}
+
+.credits span {
+	font-family: Shabnam;
+}
