@@ -1,17 +1,28 @@
 function onDeep(source) {
 	var appFallback = '',
-		app = '';
+		androidApp = '',
+		iosApp = '';
 	switch (source) {
 		case 'yt':
-			(appFallback = 'https://www.youtube.com/HappyDeveloper'), (app = 'youtube://HappyDeveloper');
+			(appFallback = 'https://www.youtube.com/HappyDeveloper'),
+				(androidApp =
+					'intent://www.youtube.com/channel/UCeoFeWoQNHozbRmwuPCLcQg#Intent;package=com.google.android.youtube;scheme=https;end'),
+				(iosApp = 'vnd.youtube://www.youtube.com/channel/UCeoFeWoQNHozbRmwuPCLcQg');
 			break;
 		case 'chrome':
-			(appFallback = 'https://ashkanam.ir/blog/videos/'), (app = 'chrome://ashkanam.ir/blog/videos/');
+			(appFallback = 'https://ashkanam.ir/blog/videos/'),
+				(androidApp = 'https://ashkanam.ir/blog/videos/'),
+				(iosApp = 'https://ashkanam.ir/blog/videos/');
 			break;
 	}
 
-	if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-		window.location = app;
+	if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+		window.location = iosApp;
+		window.setTimeout(function () {
+			window.location = appFallback;
+		}, 25);
+	} else if (/Android/i.test(navigator.userAgent)) {
+		window.location = androidApp;
 		window.setTimeout(function () {
 			window.location = appFallback;
 		}, 25);
